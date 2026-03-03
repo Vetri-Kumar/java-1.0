@@ -3,6 +3,10 @@
 pipeline {
   agent any
 
+  tools {
+    maven 'maven-jenkins-3.9.12'
+  }
+
   stages {
     stage ('build') {
       steps {
